@@ -1,0 +1,8 @@
+To run this YOLOv8-based object counting application, 
+first ensure you have Python 3.8 or higher installed on your system.
+ Begin by creating a virtual environment using python -m venv yolov8-env and activate it (yolov8-env\Scripts\activate on Windows or source yolov8-env/bin/activate on macOS/Linux).
+ Next, install the required libraries via pip: run pip install opencv-python PyQt5 ultralytics torch torchvision torchaudio
+ (the last three are needed for YOLOv8; Ultralytics will automatically handle compatible PyTorch versions).
+ Download a custom or pretrained YOLOv8 model (e.g., yolov8n.pt or your yolov8-drone.pt) and place it in the project directory.
+ For live camera access, ensure a webcam is connected and accessible (index 0). Finally, save the provided Python script as main.py 
+and execute it with python main.py. The GUI will launch, allowing image/video upload or real-time detection upon clicking the respective buttons
